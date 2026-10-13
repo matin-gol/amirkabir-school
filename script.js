@@ -1,0 +1,31 @@
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+// باز و بسته کردن منوی موبایل
+menuToggle.addEventListener("click", function () {
+  const isOpen = navMenu.classList.toggle("open");
+
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "بستن منو" : "باز کردن منو"
+  );
+
+  menuToggle.textContent = isOpen ? "✕" : "☰";
+});
+
+// بستن منو پس از انتخاب یک بخش
+navMenu.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    navMenu.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "باز کردن منو");
+    menuToggle.textContent = "☰";
+  });
+});
+
+// نمایش سال جاری
+document.getElementById("currentYear").textContent =
+  new Intl.DateTimeFormat("fa-IR-u-ca-gregory", {
+    year: "numeric"
+  }).format(new Date());
