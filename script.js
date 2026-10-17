@@ -53,3 +53,18 @@ document.getElementById("currentYear").textContent =
     });
   });
 });
+function toggleFieldInfo(button) {
+    const info = button.nextElementSibling;
+
+    if (!info || !info.classList.contains("field-more")) {
+        return;
+    }
+
+    const isHidden = info.hidden;
+    info.hidden = !isHidden;
+
+    button.setAttribute("aria-expanded", String(isHidden));
+    button.textContent = isHidden
+        ? "بستن توضیحات ↑"
+        : "بیشتر بدانید ←";
+}
