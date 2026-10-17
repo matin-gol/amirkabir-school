@@ -64,6 +64,7 @@ function toggleFieldInfo(button) {
     info.hidden = !isHidden;
 
     button.setAttribute("aria-expanded", String(isHidden));
+
     button.textContent = isHidden
         ? "بستن توضیحات ↑"
         : "بیشتر بدانید ←";
