@@ -934,3 +934,10 @@ button {
     gap: 6px;
   }
 }
+body {
+    background-image: url("./20261017_091559.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
