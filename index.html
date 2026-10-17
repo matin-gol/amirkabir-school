@@ -175,39 +175,101 @@
     </section>
 
     <!-- کارگاه‌ها -->
-    <section class="section workshops" id="workshops">
-      <div class="section-heading">
-        <span class="eyebrow">یادگیری عملی</span>
-        <h2>کارگاه‌های هنرستان</h2>
-        <p>چهار فضای آموزشی برای تمرین و کسب تجربه</p>
-      </div>
+    <section class="section workshops-section" id="workshops">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-label">فضاهای آموزشی</span>
+      <h2>کارگاه‌های هنرستان</h2>
+      <p>
+        آشنایی با کارگاه‌های تخصصی هنرستان امیرکبیر
+        و امکانات آموزشی هر رشته
+      </p>
+    </div>
 
-      <div class="workshop-grid">
-        <article class="workshop-card">
-          <span class="workshop-icon">01</span>
-          <h3>کارگاه اول</h3>
-          <p>سایت 1 کامپیوتر</p>
-        </article>
+    <div class="workshop-filters" aria-label="فیلتر کارگاه‌ها">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">
+        همه کارگاه‌ها (۸)
+      </button>
+      <button class="filter-btn" data-filter="network" aria-pressed="false">
+        شبکه و نرم‌افزار (۴)
+      </button>
+      <button class="filter-btn" data-filter="architecture" aria-pressed="false">
+        معماری داخلی (۳)
+      </button>
+      <button class="filter-btn" data-filter="graphics" aria-pressed="false">
+        گرافیک (۱)
+      </button>
+    </div>
 
-        <article class="workshop-card">
-          <span class="workshop-icon">02</span>
-          <h3>کارگاه دوم</h3>
-          <p>سایت 2 کامپیوتر</p>
-        </article>
+    <div class="workshop-grid">
 
-        <article class="workshop-card">
-          <span class="workshop-icon">03</span>
-          <h3>کارگاه سوم</h3>
-          <p>سایت 3 کامپیوتر</p>
-        </article>
+      <!-- شبکه و نرم‌افزار: ۴ کارگاه -->
+      <article class="workshop-card" data-field="network">
+        <div class="workshop-icon">💻</div>
+        <span class="workshop-field">شبکه و نرم‌افزار</span>
+        <h3>کارگاه شبکه و نرم‌افزار ۱</h3>
+        <p>فضای آموزشی تخصصی برای تمرین مهارت‌های رایانه‌ای.</p>
+      </article>
 
-        <article class="workshop-card">
-          <span class="workshop-icon">04</span>
-          <h3>کارگاه چهارم</h3>
-          <p>سایت 4 کامپیوتر</p>
-        </article>
-      </div>
-    </section>
+      <article class="workshop-card" data-field="network">
+        <div class="workshop-icon">🖥️</div>
+        <span class="workshop-field">شبکه و نرم‌افزار</span>
+        <h3>کارگاه شبکه و نرم‌افزار ۲</h3>
+        <p>محیطی برای فعالیت‌های عملی مرتبط با رایانه و نرم‌افزار.</p>
+      </article>
+
+      <article class="workshop-card" data-field="network">
+        <div class="workshop-icon">🌐</div>
+        <span class="workshop-field">شبکه و نرم‌افزار</span>
+        <h3>کارگاه شبکه و نرم‌افزار ۳</h3>
+        <p>فضایی برای تمرین مباحث فنی و مهارت‌های تخصصی رشته.</p>
+      </article>
+
+      <article class="workshop-card" data-field="network">
+        <div class="workshop-icon">⌨️</div>
+        <span class="workshop-field">شبکه و نرم‌افزار</span>
+        <h3>کارگاه شبکه و نرم‌افزار ۴</h3>
+        <p>محیطی برای یادگیری عملی و انجام تمرین‌های آموزشی.</p>
+      </article>
+
+      <!-- معماری داخلی: ۳ کارگاه -->
+      <article class="workshop-card" data-field="architecture">
+        <div class="workshop-icon">📐</div>
+        <span class="workshop-field">معماری داخلی</span>
+        <h3>کارگاه معماری داخلی ۱</h3>
+        <p>فضایی برای تمرین طراحی و آشنایی با اصول معماری داخلی.</p>
+      </article>
+
+      <article class="workshop-card" data-field="architecture">
+        <div class="workshop-icon">🏛️</div>
+        <span class="workshop-field">معماری داخلی</span>
+        <h3>کارگاه معماری داخلی ۲</h3>
+        <p>محیطی برای توسعه مهارت‌های طراحی و فعالیت‌های عملی.</p>
+      </article>
+
+      <article class="workshop-card" data-field="architecture">
+        <div class="workshop-icon">📏</div>
+        <span class="workshop-field">معماری داخلی</span>
+        <h3>کارگاه معماری داخلی ۳</h3>
+        <p>فضایی برای تمرین ایده‌پردازی و مهارت‌های تخصصی رشته.</p>
+      </article>
+
+      <!-- گرافیک: ۱ کارگاه -->
+      <article class="workshop-card" data-field="graphics">
+        <div class="workshop-icon">🎨</div>
+        <span class="workshop-field">گرافیک</span>
+        <h3>کارگاه گرافیک</h3>
+        <p>محیطی برای تمرین مهارت‌های طراحی گرافیک و کارهای بصری.</p>
+      </article>
+
+    </div>
+
+    <p class="workshop-note">
+      نام‌ها و توضیحات بالا فعلاً عمومی هستند و می‌توانند با اطلاعات
+      واقعی کارگاه‌های هنرستان جایگزین شوند.
+    </p>
+  </div>
+</section>
 
     <!-- اخبار -->
     <section class="section news-section" id="news">
@@ -270,7 +332,7 @@
       © <span id="currentYear"></span>
       تمامی حقوق متعلق به هنرستان امیرکبیر است.
     </p>
-    <p class="developer-credit">طراحی و توسعه وب‌سایت توسط متین گلعلی زاده</p>
+    <p class="developer-credit">طراحی و توسعه وب‌سایت توسط متین گلعلی زاده و محمد جواد زرگر</p>
   </footer>
 </body>
 </html>
