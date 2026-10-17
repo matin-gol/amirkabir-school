@@ -29,3 +29,27 @@ document.getElementById("currentYear").textContent =
   new Intl.DateTimeFormat("fa-IR-u-ca-gregory", {
     year: "numeric"
   }).format(new Date());
+  document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const workshopCards = document.querySelectorAll(".workshop-card");
+
+  filterButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const selectedField = button.dataset.filter;
+
+      filterButtons.forEach(function (item) {
+        const isActive = item === button;
+        item.classList.toggle("active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
+      });
+
+      workshopCards.forEach(function (card) {
+        const shouldShow =
+          selectedField === "all" ||
+          card.dataset.field === selectedField;
+
+        card.hidden = !shouldShow;
+      });
+    });
+  });
+});
