@@ -854,3 +854,83 @@ button {
     font-size: 13px;
   }
 }
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 26px;
+  width: 100%;
+}
+
+.contact-details p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+  padding: 18px 20px;
+
+  background: linear-gradient(135deg, #17385c, #102540);
+  border: 1px solid #315a82;
+  border-radius: 14px;
+
+  color: #d5e5f7;
+  font-size: 15px;
+  line-height: 2.2;
+
+  overflow-wrap: anywhere;
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* عنوان اطلاعات؛ مانند شماره تماس و آدرس */
+
+.contact-details strong {
+  color: #83cfff;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* لینک شماره تماس */
+
+.contact-details a {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+  transition: color 0.25s ease;
+}
+
+.contact-details a:hover {
+  color: #83cfff;
+  text-decoration: underline;
+}
+
+/* جلوه هنگام رفتن نشانگر روی کارت */
+
+.contact-details p:hover {
+  border-color: #61b9f2;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 15%);
+}
+
+/* نمایش بهتر در موبایل */
+
+@media (max-width: 600px) {
+  .contact-details {
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .contact-details p {
+    padding: 14px;
+    font-size: 14px;
+    gap: 6px;
+  }
+}
