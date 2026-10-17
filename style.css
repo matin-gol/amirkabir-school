@@ -136,8 +136,8 @@ button {
   padding: 75px 9%;
   overflow: hidden;
   background:
-    linear-gradient(rgba(5, 15, 40, 0.55), rgba(5, 15, 40, 0.70)),
-    url("./20261017_091559(1).jpg") center / cover no-repeat;
+    radial-gradient(ellipse at 85% 45%, #15365d 0%, transparent 48%),
+    linear-gradient(135deg, #071426, #0b1d34);
 }
 
 .hero-content {
