@@ -134,9 +134,12 @@ button {
   min-height: 540px;
   padding: 75px 9%;
   overflow: hidden;
-  background:
-    radial-gradient(ellipse at 85% 45%, #15365d 0%, transparent 48%),
-    linear-gradient(135deg, #071426, #0b1d34);
+    background:
+    linear-gradient(
+      rgba(5, 15, 40, 0.50),
+      rgba(5, 15, 40, 0.65)
+    ),
+    url("./20261017_091559(1).jpg") center / cover no-repeat;
 }
 
 .hero-content {
@@ -934,10 +937,4 @@ button {
     gap: 6px;
   }
 }
-body {
-    background-image: url("./20261017_091559(1).jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
