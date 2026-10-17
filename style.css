@@ -56,7 +56,8 @@ button {
   align-items: center;
   gap: 24px;
   padding: 14px 7%;
-  background: rgba(7, 20, 38, 0.94);
+  background: linear-gradient(rgba(5, 15, 40, 0.55), rgba(5, 15, 40, 0.70)),
+    url("./20261017_091559(1).jpg") center / cover no-repeat;;
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(14px);
 }
