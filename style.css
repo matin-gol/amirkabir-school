@@ -1042,3 +1042,57 @@ footer {
   color: #244b70;
   border-top: 1px solid #bdd8f4;
 }
+html,
+body {
+    background: #eaf6ff !important;
+    color: #17324d !important;
+}
+
+body {
+    background-image: none !important;
+}
+
+/* پس‌زمینه بخش‌های اصلی */
+header,
+main,
+.hero,
+section,
+.section,
+.contact-section,
+footer {
+    background-color: #eaf6ff !important;
+    background-image: none !important;
+    color: #17324d !important;
+}
+
+/* عنوان‌ها و نوشته‌ها */
+h1, h2, h3, h4,
+p, label, span {
+    color: #17324d;
+}
+
+/* نوار بالای سایت */
+header {
+    border-bottom: 1px solid #c5e1f5;
+}
+
+/* کارت‌های کارگاه‌ها و رشته‌ها */
+.workshop-card,
+.workshop-item,
+.field-card,
+.card {
+    background: linear-gradient(135deg, #ffffff, #cceaff) !important;
+    border: 1px solid #acd5f2 !important;
+    color: #17324d !important;
+}
+
+/* دکمه‌ها و فیلترهای کارگاه‌ها */
+button,
+.filter-btn {
+    border-color: #9cccf0;
+}
+
+/* لینک‌های منو */
+nav a {
+    color: #17324d !important;
+}
