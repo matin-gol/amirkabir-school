@@ -706,3 +706,151 @@ button {
     animation-duration: 0.01ms !important;
   }
 }
+.workshops-section {
+  padding: 80px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-label {
+  display: inline-block;
+  color: #8ab4ff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  color: #ffffff;
+  font-size: clamp(25px, 4vw, 36px);
+  margin: 0 0 12px;
+}
+
+.section-heading p {
+  color: #c4cfe0;
+  line-height: 2;
+}
+
+.workshop-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 28px 0;
+}
+
+.filter-btn {
+  border: 1px solid #334b70;
+  background: #142640;
+  color: #e8eef8;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #2456a6;
+  border-color: #6598ed;
+  color: #ffffff;
+}
+
+.filter-btn:focus-visible {
+  outline: 2px solid #9fc2ff;
+  outline-offset: 3px;
+}
+
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.workshop-card {
+  background: linear-gradient(145deg, #152945, #0e1b30);
+  border: 1px solid #2a4264;
+  border-radius: 16px;
+  padding: 24px;
+  color: #ffffff;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.workshop-card:hover {
+  transform: translateY(-4px);
+  border-color: #6598ed;
+}
+
+.workshop-card[hidden] {
+  display: none !important;
+}
+
+.workshop-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.workshop-field {
+  display: inline-block;
+  color: #a9caff;
+  background: #203b61;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.workshop-card h3 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0 0 10px;
+}
+
+.workshop-card p {
+  color: #c4cfe0;
+  line-height: 2;
+  font-size: 14px;
+  margin: 0;
+}
+
+.workshop-note {
+  color: #aebdd2;
+  text-align: center;
+  font-size: 13px;
+  line-height: 2;
+  margin-top: 24px;
+}
+
+@media (max-width: 950px) {
+  .workshop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .workshops-section {
+    padding: 55px 0;
+  }
+
+  .workshop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop-card {
+    padding: 20px;
+  }
+
+  .workshop-filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+}
