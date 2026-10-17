@@ -136,10 +136,10 @@ button {
   overflow: hidden;
     background:
     linear-gradient(
-      rgba(5, 15, 40, 0.50),
-      rgba(5, 15, 40, 0.65)
-    ),
-    url("./20261017_091559(1).jpg") center / cover no-repeat;
+            rgba(5, 15, 40, 0.50),
+            rgba(5, 15, 40, 0.65)
+        ),
+        url("./20261017_091559(1).jpg") center / cover no-repeat;
 }
 
 .hero-content {
@@ -958,4 +958,12 @@ button {
 
 .field-more[hidden] {
     display: none;
+}
+/* تنظیم تصویر پس‌زمینه برای موبایل */
+@media (max-width: 700px) {
+    .hero {
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+    }
 }
