@@ -937,4 +937,25 @@ button {
     gap: 6px;
   }
 }
+.text-link {
+    font-family: inherit;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+}
 
+.field-more {
+    margin-top: 12px;
+    padding: 12px;
+    background: #0a192c;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 2;
+}
+
+.field-more[hidden] {
+    display: none;
+}
