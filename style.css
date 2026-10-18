@@ -1032,3 +1032,80 @@ button {
     }
 }
 
+/* بخش پرسنل هنرستان */
+.staff-section {
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            #102d4b,
+            transparent 65%
+        ),
+        var(--bg);
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.staff-card {
+    text-align: center;
+    padding: 28px 18px;
+    background: linear-gradient(145deg, #152945, #0e1b30);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    transition: transform 0.25s, border-color 0.25s;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+    border-color: #6598ed;
+}
+
+.staff-avatar {
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #183b64);
+    border: 2px solid #6598ed;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.staff-card h3 {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 8px;
+}
+
+.staff-card p {
+    color: #9cc9ff;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* نمایش مناسب در تبلت */
+@media (max-width: 1000px) {
+    .staff-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* نمایش مناسب در موبایل */
+@media (max-width: 500px) {
+    .staff-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .staff-card {
+        padding: 22px 16px;
+    }
+}
+
